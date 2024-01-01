@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #003566;
+}
+
+section{
+    width: 100dvw;
+    height: 100dvh;
+    background-color: #ffe5ec;
+    border: 1px solid black;
+}
+
+#apresentacao{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2{
+    text-align: center;
+    width: 80dvw;
+    font-size: 50px;
+    height: auto;
+    background-color: #fb6f92;
+    padding: 4%;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 10px;
+}
+
+nav{
+    width: 50dvw;
+    height: auto;
+    background-color: #ffb3c6;
+    margin: 20px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fb6f92;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+/**************LOJA*****************/
+
+#ItensParaSelecao{
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#listaDeItensParaSelecao{
+    width: 90dvw;
+    height: 90dvh;
+    margin-top: 50px;
+    background-color: #fb6f92;
+    border: 5px solid #fb6f92;
+    overflow: hidden;
+}
+
+#navLoja{
+    width: 100dvw;
+    position: fixed;
+    margin: 0;
+    z-index: 999;
+}
+
+#navLoja ul li{
+    margin: 0 20px;
+}
+
+.btn-group{
+    position: absolute;
+}
+
+#ItensDasCategorias, #produtosParaSelecao{
+    margin: 0 auto;
+    width: 100%;
+    height: 85.97dvh;
+    text-align: center;
+    background-color: white;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#ItensDasCategorias h2{
+    margin-top: 50px;
+    padding: 0;
+}
+
+#produto-sozinho a{
+    text-decoration: none;
+    background-color: #fb6f92;
+    color: white;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+#produto-sozinho a:hover{
+    background-color: #ffb3c6;
+}
+
+
+#carrinho-produto-sozinho{
+    margin: 0 auto;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    border: 2px solid #fb6f92;
+    padding: 5px;
+}
+
+#carrinho-produto-sozinho img{
+    width: 50px;
+}
+
+#carrinho-produto-sozinho a{
+    text-decoration: none;
+    background-color: #fb6f92;
+    color: white;
+    padding: 2%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+img{
+    width: 150px;
+}
+
+#buttonCarrinho{
+    width: 200px;
+    height: 5dvh;
+    position: absolute;
+    left: 5dvw;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffc2d1;
+    margin-left: 5px;
+    border-radius: 0 0 10px 10px;
+}
+
+#buttonCarrinho:hover{
+    background-color: #ff8fab;
+}
+
+#carrinhoDeItens{
+    width: 40dvw;
+    height: 60dvh;
+    text-align: center;
+    background-color: #ffe5ec;
+    overflow: auto;
+    margin-top: 20px;
+    border-radius: 0 0 0 10px;
+    border: 1px solid #fb6f92;
+    position: absolute;
+    top: 2.7dvh;
+    right: 0;
+    z-index: 9999;
+}
+
+#carrinhoDeItens h2{
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+#box-FinalizarCompra{
+    width: 600px;
+    height: 300px;
+    background-color: #ffb3c6;
+    overflow: auto;
+}
+
+#box-FinalizarCompra h2{
+    width: 100%;
+}
+
+#finalizarCompra{
+    width: 200px;
+    height: 5dvh;
+    position: relative;
+    left: 200px;
+    background-color: #ffc2d1;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    border-radius: 0 0 10px 10px;
+}
+
+#finalizarCompra:hover{
+    background-color: #ff8fab;
+}
+
+#valorTotalCarrinho{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #fb6f92;
+}
+
+#valorTotalCarrinho h3{
+    text-align: center;
+    background-color: #fb6f92;
+}
+
+#visualizarComprasFinalizadas{
+    width: 100%;
+}
+
+.pedidoAnterior{
+    margin: 20px;
+    padding: 5px;
+    border-left: 1px dashed black;
+    border-right: 1px dashed black;
+}
+
+.pedidoAnterior #numero_compra{
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+}
+
+#itens_qunt{
+    text-transform: uppercase;
+}
+
+/*************RETIRADA***************/
+
+#navRetirada{
+    width: 100dvw;
+    position: fixed;
+    margin: 0;
+}
+
+#numeroDoPedido{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#informarNumeroDoPedido{
+    width: 52dvw;
+    height: 60dvh;
+    background-color: white;
+}
+
+#tela{
+    width: 100%;
+    height: 15%;
+    background-color: lightgray;
+}
+
+table{
+    width: 100%;
+    height: 85%;
+    background-color: #ffb3c6;
+}
+
+table td button{
+    width: 17dvw;
+    height: 12dvh;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+}

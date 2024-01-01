@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+
+    <nav id="navLoja">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+        </ul>
+    </nav>
+
+    <section id="ItensParaSelecao">
+        <div id="carrinhoDeItens" style="display: none;">
+            <h2>CARRINHO:</h2>
+        </div>
+<div id="listaDeItensParaSelecao">
+            <button id="buttonCarrinho" onclick="mostrarCarrinho()">
+                CARRINHO
+            </button>
+            <button id="finalizarCompra">FINALIZAR PEDIDO</button>
+         
+
+            <div id="ItensDasCategorias">
+                <h2>PRODUTOS:</h2>
+                <div id="produtosParaSelecao">
+                </div>
+                
+                <div id="box-FinalizarCompra">
+                    <h2>Pedidos Finalizados:</h2>
+                <div id="visualizarComprasFinalizadas">
+                </div>
+                </div>
+                
+            </div><!--ItensDasCategorias-->
+</div><!--listaDeItensParaSelecao-->
+    </section><!--ItensParaSelecao-->
+    
+    <script src="../JS/adicionarERetirar.js"></script>
+</body>
+</html>
