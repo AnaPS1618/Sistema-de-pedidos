@@ -30,5 +30,6 @@ _Role a tela e visualize a lista de pedidos:_
 
 <img src="./src/img/print-pedidosFinalizados.png" width="450px" height="250px">
 
+## Teste: <a href="https://anasouza.top/src/pedidos/HTML/loja.html">Click aqui</a>
 
 ### ~~OBS::.. O sistema não foi criado com foco na experiência do usuário, tendo sido criado com foco no processo de aprendizado com JavaScript.~~
